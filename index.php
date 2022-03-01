@@ -1,12 +1,3 @@
-<?php
-
-$database =  "windsell";
-
-$db_handle =  mysqli_connect('localhost:3308', 'root', '');
-$db_found =  mysqli_select_db($db_handle, $database);
-
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -34,13 +25,13 @@ $db_found =  mysqli_select_db($db_handle, $database);
         </div>
     </div>
 
-    <img src=".\images\1137px-Google_Maps_Logo_2020.svg.png" class="logo">
+    <img src=".\imagesindex\1137px-Google_Maps_Logo_2020.svg.png" class="logo">
 
 
     <ul class="medias">
-        <li class="bulle"><img src=".\images\facebook.png" class="logo-medias"></li>
-        <li class="bulle"><img src=".\images\instagram.png" class="logo-medias"></li>
-        <li class="bulle"><img src=".\images\youtube.png" class="logo-medias"></li>
+        <li class="bulle"><img src=".\imagesindex\facebook.png" class="logo-medias"></li>
+        <li class="bulle"><img src=".\imagesindex\instagram.png" class="logo-medias"></li>
+        <li class="bulle"><img src=".\imagesindex\youtube.png" class="logo-medias"></li>
     </ul>
 
 

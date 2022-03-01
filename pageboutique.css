@@ -3,10 +3,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image:
-    radial-gradient(
-      blue,
-      #06f0f0
+    background: url('imagesindex/Sunrises_and_sunsets_Sky_Roads_Wind_turbine_531925_3840x2160.jpg');
+    background: url('imagesindex/Sunrises_and_sunsets_Sky_Roads_Wind_turbine_531925_3840x2160.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     );
 }
 
@@ -46,6 +46,7 @@ body {
 #caroussel {
     width: 800px;
     overflow: hidden;
-    border: 3px solid blue;
+    border: 3px solid black;
+    position: absolute;
 }
 
