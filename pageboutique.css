@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:
+    radial-gradient(
+      blue,
+      #06f0f0
+    );
+}
+
+.images {
+    display: flex;
+        width: 550px;
+        height: 550px;
+        animation-duration: 30s;
+        animation-name: diaporama;
+        animation-iteration-count: infinite;
+}
+
+@keyframes diaporama {
+    0% {
+        transform: translateX(0); 
+    }
+    16.7% { 
+        transform: translateX(-830px);
+    }
+    33.4% {
+        transform: translateX(-1670px);
+    }
+    50.1% {
+        transform: translateX(-2650px);
+    }
+    66.8% {
+        transform: translateX(-3550px);
+    }
+    83.5% {
+        transform: translateX(-4280px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#caroussel {
+    width: 800px;
+    overflow: hidden;
+    border: 3px solid blue;
+}
+
