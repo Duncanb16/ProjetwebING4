@@ -4,49 +4,14 @@ body {
     align-items: center;
     height: 100vh;
     background: url('imagesindex/Sunrises_and_sunsets_Sky_Roads_Wind_turbine_531925_3840x2160.jpg');
-    background: url('imagesindex/Sunrises_and_sunsets_Sky_Roads_Wind_turbine_531925_3840x2160.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     );
 }
 
-.images {
-    display: flex;
-        width: 550px;
-        height: 550px;
-        animation-duration: 30s;
-        animation-name: diaporama;
-        animation-iteration-count: infinite;
-}
 
-@keyframes diaporama {
-    0% {
-        transform: translateX(0); 
-    }
-    16.7% { 
-        transform: translateX(-830px);
-    }
-    33.4% {
-        transform: translateX(-1670px);
-    }
-    50.1% {
-        transform: translateX(-2650px);
-    }
-    66.8% {
-        transform: translateX(-3550px);
-    }
-    83.5% {
-        transform: translateX(-4280px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
+img {
+     height: 550px;
+     width: 550px;
+     
 }
-
-#caroussel {
-    width: 800px;
-    overflow: hidden;
-    border: 3px solid black;
-    position: absolute;
-}
-
