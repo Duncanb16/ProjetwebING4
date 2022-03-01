@@ -43,6 +43,7 @@ h1 span {
     width: 300px;
     color: #f1f1f1;
     cursor: pointer;
+    text-decoration: none;
 }
 .btn-first:nth-child(n+1){
     margin-right: 30px;
