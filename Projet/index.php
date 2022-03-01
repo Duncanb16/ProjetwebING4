@@ -38,9 +38,9 @@ $db_found =  mysqli_select_db($db_handle, $database);
 
 
     <ul class="medias">
-        <li class="bulle"><img src=".\images\facebook.png" class="logo-medias"></li>
-        <li class="bulle"><img src=".\images\instagram.png" class="logo-medias"></li>
-        <li class="bulle"><img src=".\images\youtube.png" class="logo-medias"></li>
+        <li class="bulle"><img src=".\imagesindex\facebook.png" class="logo-medias"></li>
+        <li class="bulle"><img src=".\imagesindex\instagram.png" class="logo-medias"></li>
+        <li class="bulle"><img src=".\imagesindex\youtube.png" class="logo-medias"></li>
     </ul>
 
 
