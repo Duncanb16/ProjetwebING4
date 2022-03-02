@@ -19,6 +19,8 @@
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="pageboutique.css">
+    <!-- link pour navbar -->
+    
 </head>
 
 <body>
@@ -31,7 +33,7 @@
             <li data-target="#carouselExemple" data-slide-to="2"></li>
             <li data-target="#carouselExemple" data-slide-to="3"></li>
             <li data-target="#carouselExemple" data-slide-to="4"></li>
-            <li data-target="#carouselExemple" data-slide-to="5"></li>
+            
            
         </ol>
 
@@ -39,16 +41,13 @@
         <div class="carousel-inner">
 
             <div class="carousel-item active">
-                <img src="imagesboutique/eolienne1.jpg" height="500px" width="500px"
+                <img src="imagesboutique/eolienne3.jpg" height="500px" width="500px"
                     class="d-block">
             </div>
 
             
 
-            <div class="carousel-item">
-                <img src="imagesboutique/eolienne3.jpg" height="500px" width="500px"
-                    class="d-block">
-            </div>
+            
             
             <div class="carousel-item">
                 <img src="imagesboutique/eolienneATMB400.jpg" height="500px" width="500px"
@@ -82,7 +81,18 @@
             <span class="sr-only">Next</span>
         </a>
 
+
     </div>
+
+<!-- pause quand le curseur de la sourisest sur la slide -->
+<script>
+    $('.carousel').carousel({
+
+        pause: "null"
+
+    })
+</script>
+
 
     <div class="lignes">
         <div class="l1"></div>
@@ -98,14 +108,10 @@
         <li class="bulle"><img src="imagesindex/youtube.png" class="logo-medias"></li>
     </ul>
 
-    <!-- pause quand le curseur de la sourisest sur la slide -->
-    <script>
-        $('.carousel').carousel({
+<!-- navbar -->
 
-            pause: "null"
 
-        })
-    </script>
+    
     
 </body>
 
