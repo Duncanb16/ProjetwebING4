@@ -25,13 +25,13 @@
         </div>
     </div>
 
-    <img src=".\imagesindex\1137px-Google_Maps_Logo_2020.svg.png" class="logo">
+    <img src=".\images\1137px-Google_Maps_Logo_2020.svg.png" class="logo">
 
 
     <ul class="medias">
-        <li class="bulle"><img src=".\imagesindex\facebook.png" class="logo-medias"></li>
-        <li class="bulle"><img src=".\imagesindex\instagram.png" class="logo-medias"></li>
-        <li class="bulle"><img src=".\imagesindex\youtube.png" class="logo-medias"></li>
+        <li class="bulle"><img src=".\images\facebook.png" class="logo-medias"></li>
+        <li class="bulle"><img src=".\images\instagram.png" class="logo-medias"></li>
+        <li class="bulle"><img src=".\images\youtube.png" class="logo-medias"></li>
     </ul>
 
 
