@@ -29,9 +29,9 @@
 
 
     <ul class="medias">
-        <li class="bulle"><img src=".\images\facebook.png" class="logo-medias"></li>
-        <li class="bulle"><img src=".\images\instagram.png" class="logo-medias"></li>
-        <li class="bulle"><img src=".\images\youtube.png" class="logo-medias"></li>
+        <a class="bulle" href="https://www.facebook.com/profile.php?id=100078808338416"><img src=".\images\facebook.png" class="logo-medias"></a>
+        <a class="bulle" href="https://www.instagram.com/windsell_ing4/"><img src=".\images\instagram.png" class="logo-medias"></a>
+        <a class="bulle" href="https://www.youtube.com/channel/UC3c-ueaR2XWuOao8Wxn6n6g"><img src=".\images\youtube.png" class="logo-medias"></a>
     </ul>
 
 
