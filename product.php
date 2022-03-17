@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Your market</title>
-    <link rel="stylesheet" href="static/style/site.css" />
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
@@ -100,13 +99,13 @@
             <img width="45px" src="images/eolienneTexenergy.jpg" alt="btn image" />
           </button>
           <button class="btn btn-sm bg-transparent">
-            <img width="45px" src="images/eolienneTexenergy.jpg" alt="btn image" />
+            <img width="45px" src="images/eolienneTex2.jpg" alt="btn image" />
           </button>
           <button class="btn btn-sm bg-transparent">
-            <img width="45px" src="images/eolienneTexenergy.jpg" alt="btn image" />
+            <img width="45px" src="images/eolienneTex4.jpg" alt="btn image" />
           </button>
           <button class="btn btn-sm bg-transparent">
-            <img width="45px" src="images/eolienneTexenergy.jpg" alt="btn image" />
+            <img width="45px" src="images/eolienneTex5.jpg" alt="btn image" />
           </button>
         </div>
         <!-- Image Select Button Ends  -->
@@ -124,7 +123,7 @@
         <!-- Product Details Starts -->
         <div class="col-md-4">
           <h8><strong>Vendeur :</strong> <em>Florian</em> </h8>
-          <h6 class="font-weight-bold">EOLIENNE 1</h6>
+          <h6 class="font-weight-bold">EOLIENNE TEXENERGY</h6>
           <p>
             <i class="fas fa-star text-warning"></i>
             <i class="fas fa-star text-warning"></i>
@@ -137,7 +136,7 @@
           <div class="dropdown-divider mt-3"></div>
           <p class="mb-0">
             <span class="text-muted mr-2">Prix :</span>
-            <span class="text-danger font-weight-bold">4000 &nbsp;<i class="fas fa-dollar-sign"></i></span>
+            <span class="text-danger font-weight-bold">150 &nbsp;<i class="fas fa-dollar-sign"></i></span>
 
             <br />
             <span class="text-muted mr-2">Auteur :</span>
@@ -149,7 +148,7 @@
           <!-- Delivery Quality Images starts -->
           <div class="row" style="font-size: 12px; font-weight: bold">
             <div class="form-group">
-              <form method="POST" action="./shopping_cart.html">
+              <form method="POST" action="./shopping_cart.php">
                 <button class="btn btn-warning btn-sm mt-3" type="submit" name="add_to_cart_btn">
                   <i class="fas fa-cart-plus float-left text-primary" style="font-size: 25px; width: 80px"></i>
                   Ajouter à la carte
@@ -171,7 +170,17 @@
         <div class="row border-bottom mt-3">
           <div class="col-md-12 my-3">
             <h6 class="text-warning font-weight-bold">Description du produit</h6>
-            <p class="ml-3">Eolienne rare</p>
+            <p class="ml-3">Informations techniques : </p>
+            <p>  Poids total: 626 g </p>
+            <p> Dimensions: Environ 200 x 140 x 80mm (dans sa housse) </p>
+            <p> Pale/turbine déployée 320mm </p>
+            <p> Hauteur du trépied : de 200 mm à 380mm </p>
+            <p> Sortie: 5V à 1.5-2 amp </p>
+            <p> Matériel: Turbine en aluminium/Pales en PP (Polypropylène) </p>
+            <p> Puissance: 7,5 à 10 watts avec des vents de 24km/h mini </p>
+            <p> Température: - 20°C à + 40°C </p>
+            <p> Etanchéité: IP65 </p>
+            <p> Garantie: 2 ans</p>
           </div>
         </div>
 
@@ -274,7 +283,7 @@
         selected = event.target.id;
       });
       $('#search_btn').click(function (event) {
-        $('#search_btn').attr('href', '<?= Navigation::search_product_page() ?>?category=' + selected + '&filter=' + $('#search_bar').val());
+        $('#search_btn').attr('href', '#');
       });
     </script>
   </body>

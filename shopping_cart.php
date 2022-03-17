@@ -118,8 +118,8 @@
 
             <!-- Product details -->
             <div class="col-md-9">
-              <a href="./product.html">Eolienne rare</a>
-              <p class="text-uppercase font-weight-bold my-0 float-right"><span>4000</span> <i class="fas fa-dollar-sign" style="font-size: 10px"></i></p>
+              <a href="./product.php">EOLIENNE TEXENERGY</a>
+              <p class="text-uppercase font-weight-bold my-0 float-right"><span>150</span> <i class="fas fa-dollar-sign" style="font-size: 10px"></i></p>
               <p class="text-muted my-0">Vendu par : Florian</p>
 
               <div class="d-flex flex-row mt-2">
@@ -139,7 +139,7 @@
 
           <!-- Sub total row starts -->
           <div class="row border-top py-3">
-            <div class="col-md-12">Total : 4000</span> <i class="fas fa-dollar-sign" style="font-size: 10px"></i></p>
+            <div class="col-md-12">Total : 150</span> <i class="fas fa-dollar-sign" style="font-size: 10px"></i></p>
             </div>
           </div>
         </div>
@@ -158,7 +158,7 @@
             </div>
             <div class="card-body text-center" style="background-color: #f3f3f3">
               <p class="font-weight-bold">
-                Total: <span>4000</span> <i class="fas fa-dollar-sign" style="font-size: 10px"></i>
+                Total: <span>150</span> <i class="fas fa-dollar-sign" style="font-size: 10px"></i>
               </p>
 
               <button onclick="Buy()" href="#" class="btn btn-warning btn-sm btn-block">Acheter</button>

@@ -19,7 +19,7 @@
     <div class="container-first">
         <h1><span>WindSell </span></h1>
         <div class="container-btns">
-            <a class="btn-first b1" href="home_page.html">Boutique</a>
+            <a class="btn-first b1" href="home_page.php">Boutique</a>
             <a class="btn-first b2">Compte Client</a>
             <a class="btn-first b3">Maps</a>
         </div>
