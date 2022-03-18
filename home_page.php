@@ -50,12 +50,6 @@
     <ul class="navbar-nav">
       <!-- User Account Starts - Dynamiser si connecté ou pas -->
 
-      <!-- <li class="nav-item dropdown px-2">
-                <a class="nav-link" href="" id="userAccount" role="button" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-2x fa-user-circle"></i>
-                </a>
-            </li> -->
-
       <li class="nav-item dropdown px-2">
         <a class="nav-link" href="#" id="userAccount" role="button" data-mdb-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-2x fa-user-circle"></i>
