@@ -18,7 +18,7 @@
   <!-- Barre de navigation -->
   <nav class="navbar navbar-expand-md" style="background-color: #424242">
     <!-- Drawer Start -->
-    <a class="navbar-brand" href="./home_page.php" style="color: orangered"><em> &nbsp; WINDSELL</em></a>
+    <a class="navbar-brand" href="./index.php" style="color: orange"><em> &nbsp; WINDSELL</em></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -62,7 +62,7 @@
         </a>
         <div class="dropdown-menu px-3" aria-labelledby="userAccount">
           <br />
-          <a href="" class="dropdown-item btn btn-warning w-75 btn-sm font-weight-bold">Se connecter</a>
+          <a href="" class="dropdown-item btn btn-warning w-75 btn-sm font-weight-bold">Connexion</a>
           <br />
           <small>Nouvel utilisateur ?<a href="">
               <br />
@@ -87,7 +87,7 @@
 
   <!-- Header -->
   <header>
-    <h1>WINDSELL, L'AVENIR.</h1>
+    <h1>WINDSELL SHOP</h1>
     <!--  <button>Naviguer <i class="fas fa-paper-plane"></i></button> -->
   </header>
   <!-- Fin du header -->
