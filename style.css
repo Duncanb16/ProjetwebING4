@@ -1,138 +1,112 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Open Sans', sans-serif;
+    background: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-image: url('images/Sunrises_and_sunsets_Sky_Roads_Wind_turbine_531925_3840x2160.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
 }
-/* Barre de navigation */
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #fff;
-  position: sticky;
-  top: 0;
-}
-nav h1 {
-  font-size: 20px;
-}
-nav .onglets {
-  display: flex;
-  flex-wrap: wrap;
-}
-nav .onglets p {
-  font-size: 17px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-nav .onglets input {
-  margin: 8px 20px;
-  padding: 15px;
-  border-radius: 30px;
-  border: none;
-  background-color: #f2f2f2;
-  outline: none;
-}
-/* Fin de la barre de navigation */
 
-/* Header */
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.container-first {
+    position: absolute;
+    top: 30%;
+    left: 5%;
 }
-header h1 {
-  font-size: 50px;
-  max-width: 500px;
-  text-align: center;
-}
-header button {
-  padding: 15px 20px;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  cursor: pointer;
-}
-/* Fin du header */
 
-/* Section principale */
-
-.main {
-  margin: 20px;
-  margin-top: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+h1 {
+    text-transform: uppercase;
+    font-size: 110px;
+    color: #f1f1f1;
+    font-family: Abril fatface, sans-serif;
 }
-/* Toutes les cartes */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
+h1 span {
+    position: relative;
 }
-.cards .card {
-  margin-right: 20px;
-  cursor: pointer;
+.container-btns {
+    position: relative;
+    top: 50px;
 }
-.cards .card img {
-  width: 350px;
-}
-.cards .card .card-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.cards .card .card-body p {
-  margin-top: -10px;
-}
-/* Fin de toutes les cartes */
-
-/* Video de présentation */
-.main .video {
-  margin-top: 80px;
-  width: 90%;
-}
-.main .video iframe {
-  border: none;
-  border-radius: 10px;
-  width: 100%;
-  height: 400px;
-}
-/* Fin de la vidéo de présentation */
-/* Fin de la section principale */
-
-/* Pied de page */
-footer {
-  margin-top: 100px;
-  background-color: #000;
-  padding: 30px;
-  color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-footer .social-media {
-  display: flex;
-}
-footer .social-media p {
-  margin-right: 15px;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  padding: 5px;
-  text-align: center;
-  width: 20px;
-  cursor: pointer;
-}
-/* Fin du pied de page */
-
-@media screen and (max-width: 640px) {
-  nav .onglets .link,
-  nav h1 {
-    display: none;
-  }
-  .cards .card img {
+.btn-first {
+    border: 2px solid #f1f1f1;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
     width: 300px;
-  }
+    color: #f1f1f1;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-first:nth-child(n+1){
+    margin-right: 30px;
+}
+.btn-first:hover {
+    transition: all 0.3s ease-in-out;
+    background: #f1f1f1;
+    color: #333;
+}
+.lignes {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+.l1 {
+    width: 250px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+.l2 {
+    width: 140px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+}
+
+.logo {
+    position: absolute;
+    right: 2.9%;
+    top: 4%;
+    width: 90px;
+    height: 80px;
+    cursor: pointer;
+}
+.medias {
+    list-style-type: none;
+    position: absolute;
+    right: 3.3%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bulle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+}
+
+.logo-medias {
+    width: 40px;
+    height: 40px;
 }
