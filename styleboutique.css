@@ -106,25 +106,15 @@ header button {
 /* Pied de page */
 footer {
   margin-top: 100px;
-  background-color: #000;
+  background-color: white;
   padding: 30px;
   color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-footer .social-media {
-  display: flex;
-}
-footer .social-media p {
-  margin-right: 15px;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  padding: 5px;
-  text-align: center;
-  width: 20px;
-  cursor: pointer;
-}
+
+
 /* Fin du pied de page */
 
 @media screen and (max-width: 640px) {
@@ -136,14 +126,13 @@ footer .social-media p {
     width: 300px;
   }
 }
-.medias {
+footer .medias {
   list-style-type: none;
-  position: absolute;
-  right: 3.3%;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: center;
+  position: bottom;
   align-items: center;
-  flex-direction: column;
+}
+.logo-medias {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
