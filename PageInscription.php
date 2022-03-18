@@ -61,25 +61,8 @@ if(isset($_POST['inscription'])){
     }else $return="Un ou plusieurs champs manquant ! Veuillez à bien tout remplir.";
 }
 
-//Formulaire de Connexion
-if(isset($_POST['connexion'])){
-    $email = Securise($_POST['email']);
-    $mdp = Securise($_POST['mdp']);
-
-    if(!empty($email) AND !empty($mdp)){
-        $mdp = PasswordHash($mdp);// ICI, si c'est le même mot de passe qui est entré que quand il a été créé, alors ça va le crypter de la même façon et il pourra se connecter
-        $VerifUser = $bdd -> query(' SELECT id FROM users WHERE email = "'.$email.'" AND mdp= "'.$mdp.'" '); // On cherche si dans la BDD l'email et mdp rentrés existent bien pour un utilisateur
-        $UserData = $VerifUser -> fetch(); // la fonction fetch retourne un tableau de valeur
-        if ($VerifUser -> rowCount() == 1){ // rowCount retourne le nombre d'entrée que la requête retourne ET ICI on vérifie s'il existe bien un utilisateur
-            $_SESSION['login'] = $UserData['id']; // Ici on créé la session de l'utilisateur
-            header('location:EspaceMembre.php'); // Renvoie sur la page espace membre si tout est bon et qu'il se connecte bien (donc compte existant)
-        }else $return = "Les identifiants sont invalides.";
-    
-    }else $return = "Un ou plusieurs champs est manquant.";
-}
-
 ?>
-
+ 
 
 <!DOCTYPE html> 
 <html lang="fr"> 
@@ -88,10 +71,10 @@ if(isset($_POST['connexion'])){
     <title>Inscription</title>
 
     <!--Bibliothèque bootstrap pour le design-->
-    <!--
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
--->
+
 </head>
 </body> 
 
@@ -111,20 +94,10 @@ if(isset($_POST['connexion'])){
     <input type="submit" name="inscription" value="M'inscrire">
 </form>
 <hr>
-
-<!--  Si le formulaire de connexion est validé et s'il y a un message alors on affiche le message -->
-<?php if(isset($_POST['connexion']) AND isset($return)) echo $return; ?> 
-
-<form action="#" method="POST">
-    <input type="email" name="email" placeholder="Votre adresse e-mail">
-    <input type="password" name="mdp" placeholder="Votre mot de passe">
-    <input type="submit" name="connexion" value="Se connecter">
+<form> <!--Bouton retour sur la page précédente-->
+    <input class="btn btn-outline-dark" type="button" value="Retour" onclick="history.go(-1)">
 </form>
-
 <!--
-<hr>
-<button type="button" class="btn btn-outline-dark" href="PageConnexion.php">Retour</button>
--->
+<a href="javascript:history.go(-1)">Retour</a> Autre façon de faire un retour-->
 </body>
-
 </html>

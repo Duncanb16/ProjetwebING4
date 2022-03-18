@@ -51,77 +51,60 @@ if(isset($_POST['connexion'])){
 
 
 
+
+
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta charset="utf-8">
-    <title>Inscription</title>
-    <!--Bibliothèque bootstrap pour le design-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<html>
+    <head>
+    <link href="PageConnexion2.css" rel="stylesheet">
 
-
-
-
-
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="PageConnexion.css" rel="stylesheet">
-    
-  </head>
-  <body class="text-center">
-     
-    
-<main class="form-signin">
-
-  <form action="#" method="POST">
-    <h1 class="h3 mb-3 fw-normal">Connexion</h1>
-
-    <div class="form-floating">
-    <input type="email" name="email" placeholder="Votre adresse e-mail" class="form-control" id="floatingInput">
-      <label for="floatingInput">Email</label>
+</head>
+    <body>
+<div class="page">
+  <div class="container">
+    <div class="left">
+      <div class="login">Login</div>
+      <div class="eula">By logging in you agree to the ridiculously long terms that you didn't bother to read</div>
     </div>
-    <div class="form-floating">
-    <input type="password" name="mdp" placeholder="Votre mot de passe" class="form-control" id="floatingPassword">
-      <label for="floatingPassword">Mot de passe</label>
-    </div>
-
-    <div>
-     <a href="PageInscription.php"> Vous n'avez pas de compte ? Inscription </a>
-    </div>
-    <hr>
-    <input type="submit" name="connexion" value="Se connecter" class="w-100 btn btn-lg btn-outline-dark">
-     <!--  Si le formulaire de connexion est validé et s'il y a un message alors on affiche le message -->
-<?php if(isset($_POST['connexion']) AND isset($return)) echo $return; ?> 
-    <div>
-        <hr>
+    <div class="right">
+      <svg viewBox="0 0 320 300">
+        <defs>
+          <linearGradient
+                          inkscape:collect="always"
+                          id="linearGradient"
+                          x1="13"
+                          y1="193.49992"
+                          x2="307"
+                          y2="193.49992"
+                          gradientUnits="userSpaceOnUse">
+            <stop
+                  style="stop-color:#ff00ff;"
+                  offset="0"
+                  id="stop876" />
+            <stop
+                  style="stop-color:#ff0000;"
+                  offset="1"
+                  id="stop878" />
+          </linearGradient>
+        </defs>
+        <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
+      </svg>
+      <form action="#" method="POST">
+      <div class="form">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="password">Password</label>
+        <input type="password" name="mdp" id="password">
+        <input type="submit" name="connexion" value="Se connecter" id="submit">
+      </div>
+    </form>
     <form> <!--Bouton retour sur la page précédente-->
     <input class="w-100 btn btn-lg btn-outline-dark" type="button" value="Retour" onclick="history.go(-1)">
 </form>
     </div>
-    
-  </form>
-</main>
+  </div>
+</div>
+<script src="PageConnexion2.js"></script>
 
-
-    
-  </body>
+    </body>
 </html>
