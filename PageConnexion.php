@@ -43,7 +43,7 @@ if (isset($_POST['connexion'])) {
     $UserData = $VerifUser->fetch(); // la fonction fetch retourne un tableau de valeur
     if ($VerifUser->rowCount() == 1) { // rowCount retourne le nombre d'entrée que la requête retourne ET ICI on vérifie s'il existe bien un utilisateur
       $_SESSION['login'] = $UserData['id']; // Ici on créé la session de l'utilisateur
-      header('location:index.php'); // Renvoie sur la page espace membre si tout est bon et qu'il se connecte bien ou s'inscris bien (donc compte existant)
+      header('location:EspaceMembre.php'); // Renvoie sur la page espace membre si tout est bon et qu'il se connecte bien ou s'inscris bien (donc compte existant)
     } else $return = "Les identifiants sont invalides.";
   } else $return = "Un ou plusieurs champs sont manquant.";
 }
