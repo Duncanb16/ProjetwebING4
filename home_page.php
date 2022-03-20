@@ -112,9 +112,9 @@
 
       <!-- ICI CODE PHP POUR DYNAMISER LES PRODUITS DEPUIS LA BDD -->
       <div class="card">
-
-        <img src="images/eolienneGenerateur.jpg" />
-
+        <a href="./product2.php">
+          <img src="images/eolienneGenerateur.jpg" />
+        </a>
         <div class="card-header">
           <h4 class="title">EOLIENNE 300W</h4>
           <h4 class="price">2000$</h4>
@@ -129,7 +129,9 @@
       <!-- ICI CODE PHP POUR DYNAMISER LES PRODUITS DEPUIS LA BDD -->
       <!-- ICI CODE PHP POUR DYNAMISER LES PRODUITS DEPUIS LA BDD -->
       <div class="card">
-        <img src="images/eolienne3.jpg" height="350px" />
+        <a href="./product3.php">
+          <img src="images/eolienne3.jpg" height="350px" />
+        </a>
         <div class="card-header">
           <h4 class="title">EOLIENNE SMOOSE</h4>
           <h4 class="price">1899$</h4>
