@@ -20,8 +20,9 @@
         <h1><span>WindSell </span></h1>
         <div class="container-btns">
             <a class="btn-first b1" href="home_page.php">Boutique</a>
-            <a class="btn-first b2">Compte Client</a>
-            <a class="btn-first b3">Maps</a>
+            <a class="btn-first b2" href="PageConnexion.php">Compte Client</a>
+            <a class="btn-first b3" href="PageInscription.php">S'inscrire</a>
+            <a class="btn-first b4">Maps</a>
         </div>
     </div>
 

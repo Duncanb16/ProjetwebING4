@@ -35,7 +35,7 @@
             </div>
           </div>
           <input type="text" placeholder="Search bar" id="search_bar" class="form-control" size="50>
-            <div class=" input-group-append">
+            <div class=" input-group-append>
           <a href="" id="search_btn" type="submit" class="btn btn-warning" onclick="">
             <i class="fas fa-search"></i>
           </a>
@@ -58,9 +58,9 @@
         </a>
         <div class="dropdown-menu px-3" aria-labelledby="userAccount">
           <br />
-          <a href="" class="dropdown-item btn btn-warning w-75 btn-sm font-weight-bold">Se connecter</a>
+          <a href="PageConnexion.php" class="dropdown-item btn btn-warning w-75 btn-sm font-weight-bold">Connexion</a>
           <br />
-          <small>Nouvel utilisateur ?<a href="">
+          <small>Nouvel utilisateur ?<a href="PageInscription.php">
               <br />
               Inscrivez-vous ici !.</a></small>
         </div>

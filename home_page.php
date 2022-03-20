@@ -56,9 +56,9 @@
         </a>
         <div class="dropdown-menu px-3" aria-labelledby="userAccount">
           <br />
-          <a href="" class="dropdown-item btn btn-warning w-75 btn-sm font-weight-bold">Connexion</a>
+          <a href="PageConnexion.php" class="dropdown-item btn btn-warning w-75 btn-sm font-weight-bold">Connexion</a>
           <br />
-          <small>Nouvel utilisateur ?<a href="">
+          <small>Nouvel utilisateur ?<a href="PageInscription.php">
               <br />
               Inscrivez-vous ici !.</a></small>
         </div>
