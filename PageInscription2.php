@@ -193,7 +193,7 @@ if (isset($_POST['inscription'])) {
                     </div>
                     <div class="flex-m w-full p-b-33 validate-input" data-validate="terms are required">
                         <div class="contact100-form-checkbox">
-                            <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                            <input required class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
                             <label class="label-checkbox100" for="ckb1">
                                 <span class="txt1">
                                     J'accepte les termes de la
