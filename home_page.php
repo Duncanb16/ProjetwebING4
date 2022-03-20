@@ -58,7 +58,7 @@
           <br />
           <a href="PageConnexion.php" class="dropdown-item btn btn-warning w-75 btn-sm font-weight-bold">Connexion</a>
           <br />
-          <small>Nouvel utilisateur ?<a href="PageInscription.php">
+          <small>Nouvel utilisateur ?<a href="PageInscription2.php">
               <br />
               Inscrivez-vous ici !.</a></small>
         </div>
